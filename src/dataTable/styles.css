@@ -1,0 +1,43 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th {
+    text-align: left;
+    background-color: #efefef;
+    font-size: 1.3em;
+}
+tr {
+    border-bottom: 1px solid #ccc;
+}
+
+td, th {
+    padding: 10px;
+
+}
+
+.flex-table  {
+    width: 100%;
+    border:1px solid #ccc;
+}
+.flex-table .row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+.flex-table .header-row {
+    background-color: #efefef;
+}
+
+.flex-table .header {
+
+    font-size: 1.3em;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.flex-table .cell {
+    padding: 10px;
+}

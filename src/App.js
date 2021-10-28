@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import {DataTable} from "./dataTable/DataTable";
+import {bidSheetList} from "./data/tableData"
+import {FlexDataTable} from "./dataTable/FlexDataTable";
+
+
+const columns = [
+    {title: 'Product', type: 'product', width: 300},
+    {
+        title: 'Manufacturer',
+        type: 'manufacturer',
+        width: 200
+    },
+    {
+        title: 'Pack/Size',
+        type: 'pack',
+        width: 100
+    }
+]
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <FlexDataTable data={bidSheetList} columns={columns}/>
+            <DataTable data={bidSheetList} columns={columns}/>
+        </div>
+    );
 }
 
 export default App;
