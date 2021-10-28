@@ -1,5 +1,5 @@
 import {Text} from "./cellTypes/text";
-import {cellTypeMapping} from "./DataTable";
+import {cellTypeMapping} from "./cellTypeMapping";
 
 const HeaderCell = ({width, children}) => {
     return <div className="header" style={{width: width ? `${width}px` : 'auto'}}>{children}</div>

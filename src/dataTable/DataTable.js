@@ -1,14 +1,6 @@
 import './styles.css';
-import {Manufacturer} from "./cellTypes/manufacturer";
 import {Text} from "./cellTypes/text";
-import {Product} from "./cellTypes/product";
-import {Pack} from "./cellTypes/pack";
-
-export const cellTypeMapping = {
-    manufacturer: Manufacturer,
-    product: Product,
-    pack: Pack,
-}
+import {cellTypeMapping} from "./cellTypeMapping";
 
 export const DataTable = ({data, columns}) => {
     return <table>
